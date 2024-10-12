@@ -33,6 +33,7 @@
     vscodium
     zoom-us
     cowsay
+    jujutsu
   ];
   # programs.vscode.enable = true;
 
