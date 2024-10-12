@@ -23,6 +23,7 @@
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.plasma6.enable = true;
   systemd.services.display-manager.restartIfChanged = false;
 
   networking.networkmanager.enable = true;
@@ -70,6 +71,7 @@
     # change this to your ssh key
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINimJXI8WOYUMwfAcGyKB9EYtuaClNjeEH4ZTQl9tuUY"
   ];
+  programs.ssh.askPassword = lib.mkForce "true";
 
   networking.hostName = "soup";
   system.stateVersion = "24.05";
