@@ -32,6 +32,7 @@
     uv
     vscodium
     zoom-us
+    cowsay
   ];
   # programs.vscode.enable = true;
 
