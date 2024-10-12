@@ -71,5 +71,6 @@
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINimJXI8WOYUMwfAcGyKB9EYtuaClNjeEH4ZTQl9tuUY"
   ];
 
+  networking.hostName = "soup";
   system.stateVersion = "24.05";
 }
