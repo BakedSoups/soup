@@ -19,6 +19,8 @@
       wget
     ];
 
+  services.tailscale.enable = true;
+  programs.kdeconnect.enable = true;
   hardware.graphics.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
@@ -28,7 +30,6 @@
 
   networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
-  services.tailscale.enable = true;
   services.resolved.enable = true;
   networking.wireless.iwd = {
     enable = true;

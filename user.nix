@@ -34,6 +34,7 @@
     zoom-us
     cowsay
     jujutsu
+    wine
   ];
   # programs.vscode.enable = true;
 
