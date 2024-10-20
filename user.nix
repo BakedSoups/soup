@@ -35,6 +35,10 @@
     cowsay
     jujutsu
     wine
+    godot_4
+    github-desktop
+    digital
+    obs-do
   ];
   # programs.vscode.enable = true;
 
@@ -55,6 +59,21 @@
     };
   };
   services.snapper.snapshotInterval = "*:0/5";
+
+  services.keyd = {
+    enable = true;
+    keyboards.default = {
+      ids = ["*"];
+      settings = {
+        main = {
+          capslock = "layer(nav)";
+        };
+        "nav:C" = {
+          "[" = "esc";
+        };
+      };
+    };
+  };
 
   boot.extraModulePackages = with config.boot.kernelPackages; [
     v4l2loopback
